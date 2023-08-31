@@ -8,7 +8,7 @@ import (
 
 const webPort = "8080"
 
-type Config struct {}
+type Config struct{}
 
 func main() {
 	app := Config{}
@@ -16,7 +16,7 @@ func main() {
 	log.Printf("Stating broker service on port %s\n", webPort)
 
 	srv := &http.Server{
-		Addr: fmt.Sprintf(":%s", webPort),
+		Addr:    fmt.Sprintf(":%s", webPort),
 		Handler: app.routes(),
 	}
 
