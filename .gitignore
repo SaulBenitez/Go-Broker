@@ -1,1 +1,4 @@
 .vscode
+project/db-data/postgres/*
+auth/authApp
+broker/brokerApp
